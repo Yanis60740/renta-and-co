@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap%27');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap%27');
+
+
+/* CSS3 Reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, a, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+} 
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+
+a{
+    text-decoration : none;
+    color: #753E4E;
+}
+p {
+    font-family: 'Inter';
+    
+}
+
+body {
+    overflow: hidden;
+    
+}
+  
+.renta{    
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+}
+.renta-main-g{
+    display: flex;
+    width: 294px;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 235, 216, 0.78);
+}
+.renta-main-g p{
+    font-family: 'Bevan';
+    font-weight: 500;
+    font-size: 21px;
+    color: #753E4E;
+    display: flex;
+    margin-top: 42px;
+}
+.formulaire label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    justify-content: center; /* centre le contenu verticalement */
+      
+   
+}
+.form-co textarea::placeholder {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px
+    ;
+}
+
+.renta-main-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    justify-content: center;
+}
+.renta-main-d{
+    right: 0px;
+    position: absolute;}
+.titre{
+    display: flex;
+    width: 430px;
+    height: 44px;
+    justify-content: center;
+    font-family: 'Nunito';
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #753E4E;
+    margin-bottom: 50px;
+}
+.form-co{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulaire{
+    height: 193px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.champs-1.mail{
+    width: 371px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #D7DADB;
+    border-radius: 16px;
+    display: flex
+}
+.formulaire textarea {
+    border: 1px solid #D7DADB;;
+    font-family: 'Nunito';
+    width: 361px;
+  
+    border-radius: 10px;
+}
+.input-password {
+    border: 1px solid #D7DADB;
+    font-family: 'Nunito';
+    width: 361px;
+    height: 38px;
+    border-radius: 10px;
+  }
+
+
+
+
+
+.mdp-oublie{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+/* identical to box height, or 24px */
+    text-align: right;
+    text-decoration-line: underline;
+
+/* Main Color */
+    color: #753E4E;
+
+}
+.seco{background: #753E4E;
+    border-radius: 16px;
+    color: white;
+    width: 371px;
+    height: 43px;
+    font-family: 'Nunito';
+    /* font-style: normal; */
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 27px;}
+
+.pain{
+    background: url(assets/bread.svg);
+
+    display: flex;
+   
+    height: 822px;
+
+    width: 426px;
+
+
+    background-repeat: no-repeat;
+}
+
+.oeil{
+    background: url(assets/eye.svg);
+    
+    display: flex;
+    position: absolute;
+    height: 25px;
+    margin-left: 327px;
+    margin-top: 13px;
+    width: 25px;
+
+
+    background-repeat: no-repeat;
+    }
+.echec{
+    width: 371px;
+    height: 50px;
+    background: rgba(231, 114, 128, 0.1);
+    border-radius: 8px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #E77280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0"/>
+    <title> Renta & co</title>
+    <link type="text/css" rel="stylesheet" href="stylereF.css"/>
+    <script src="https://cdn.sendinblue.com/sdk/web/libs/v3.0.0/sendinblue.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+     <div class="renta">
+        <div class="renta-main-g">
+            <p><a href="index.html">Renta & co</a></p>
+        </div>
+        <div class="renta-main-mid">
+            <div class="titre_R">
+                Mot de passe oublié ?
+            </div>
+            <p class="com">Entrez l’email associé à votre compte entreprise pour<br> réinitialiser votre mot de passe. </p>
+            <form class="form-R" action="javascript:void(0);" onsubmit="sendResetEmail(event);">
+                <div class="formulaire">
+                    <div class="champs-1">
+                        <span class="txt_mail">Votre email</span>
+                        <label for="mail">
+                            <input id="mail" name="mail" required class="input-password">
+                        </label>
+                        <span class="txt">Mince, votre email est invalide</span>
+                    </div>
+                </div>
+                <p class="explication">Vous ne disposez pas d’un compte Entreprise. Rapprochez-vous<br> de nos commerciaux pour plus d’informations.</p>
+                <button class="button_R" type="submit">
+                    Réinitialiser
+                </button>
+            </form>
+        </div>
+        <div class="renta-main-d">
+            <div class="pain"></div>
+        </div>
+    </div>
+    <script>
+        function sendResetEmail(event) {
+            event.preventDefault();
+            var email = document.getElementById("mail").value;
+            Email.send({
+              SecureToken: "Votre jeton sécurisé",
+              To: email,
+              From: "Votre adresse e-mail",
+              Subject: "Réinitialisation de votre mot de passe",
+              Body:
+                "Bonjour,<br>Votre demande de réinitialisation de mot de passe a été traitée. Veuillez suivre les instructions pour créer un nouveau mot de passe.<br>Cordialement,<br>L'équipe Renta & co",
+            }).then(
+              function (response) {
+                console.log(response);
+              },
+              function (error) {
+                console.log("Error while sending e-mail:", error);
+              }
+            );
+            }
+           
+            var defaultClient = sendinblue.ApiClient.instance;
+            var apiKey = defaultClient.authentications['api-key'];
+            apiKey.apiKey = "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";
+            
+            var apiInstance = new sendinblue.SMTPApi();
+         
+          
+        </script>
+    </body>
+</html>

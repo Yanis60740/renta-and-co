@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0"/>
+        <title> Renta & co</title>
+        <link type="text/css" rel="stylesheet" href="styleco.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.oeil').on('click', function() {
+                    var input = $(this).prev('input');
+                    var icon = $(this).children('img');
+                    if (input.attr('type') === 'password') {
+                        input.attr('type', 'text');
+                        icon.attr('src', 'eye-slash.svg');
+                    } else {
+                        input.attr('type', 'password');
+                        icon.attr('src', 'eye.svg');
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+         <div class="renta">
+            <div class="renta-main-g">
+                <p><a href="index.html">Renta & co</a></p>
+            </div>
+            <div class="renta-main-mid">
+                <div class="titre">
+                    Connexion à votre espace 🔐 
+                </div>
+                <form class="form-co" action="seco.php" method="post">
+                    <div class="formulaire">
+                        <div class="champs-1">
+                            <label for="mail">
+                                <input id="mail" name="mail" placeholder="Votre email" required class="input-password " ></textarea>
+                            </label>
+                        </div>
+                        <div class="champs-2">
+                            <label for="pswd">
+                                <input type="password" id="pswd" name="pswd" placeholder="Mot de passe" required class="input-password"/>
+                                <div class="oeil"></div>
+                            </label>
+                        </div>
+                        <div class="mdp-oublie"><a href="renitialisation_main.html">Mot de passe oublié?</a></div>
+                    </div>
+                    <div class="echec">Oups, nous n’avons pas pu vous identifier. Merci de vérifier<br> votre email ou le mot de passe saisis.</div>
+                    <button class="seco" type="submit">
+                        Se connecter
+                    </button>
+                </form>
+            </div>
+            <div class="renta-main-d">
+                <div class="pain"></div>
+            </div>
+        </div>
+    </body>
+</html>

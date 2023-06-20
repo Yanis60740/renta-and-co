@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap%27');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap%27');
+
+
+/* CSS3 Reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, a, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+} 
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+
+a{
+    text-decoration : none;
+    color: #753E4E;
+}
+p {
+    font-family: 'Inter';
+    
+}
+
+body {
+    overflow: hidden;
+    
+}
+  
+.renta{    
+    display: flex;
+    width: 1300PX;
+    height: 100vh;
+    flex-direction: row;
+}
+.renta-main-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    margin-top: 16%;
+    margin-left: 5%;
+    justify-content: space-around;
+}
+
+.renta-main-g{
+    display: flex;
+    width: 294px;
+    justify-content: center;
+    background-color: rgba(255, 235, 216, 0.78);
+    height: 100vh;
+}
+.renta-main-g p{
+    font-family: 'Bevan';
+    font-weight: 500;
+    font-size: 21px;
+    color: #753E4E;
+    display: flex;
+    margin-top: 42px;
+    height: 100vh;
+}
+.renta-main-d{
+    right: 0px;
+    position: absolute;}
+
+.pain{
+    background: url(assets/bread.svg);
+
+    display: flex;
+    
+    height: 100vh;
+
+    width: 426px;
+
+
+    background-repeat: no-repeat;
+}
+.arriere{
+    background: url(assets/vector.svg);
+    display: flex;
+    height: 13px;
+    width: 15px;
+    background-repeat: no-repeat;
+    width: 15px;
+    margin-right: 400px;
+    margin-top: -6px;
+}
+.img_env{
+    background: url(assets/Shape_1.svg);
+
+    display: flex;
+    
+    width: 43.26px;
+   
+    height: 48px;;
+
+    background-repeat: no-repeat;
+}
+.img_a{
+    background: url(assets/Shape_2.svg);
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-left: 12px;
+    margin-top: 8px;
+}
+.button_R {background: #753E4E;
+    border-radius: 16px;
+    color: white;
+    width: 371px;
+    height: 43px;
+    font-family: 'Nunito';
+    /* font-style: normal; */
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 27px;}
+.p3{
+    display: flex;
+    
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #753E4E;
+    margin-top: -18px;
+    margin-left: 28PX;
+}
+.paragraphe{
+    width: 411px;
+    font-family: 'Nunito';
+    /* font-style: normal; */
+    font-weight: 375;
+    font-size: 15px;
+    line-height: 21px;
+    color: #27273F;
+    display: flex;
+    flex-direction: column;}
+.précédent{
+    display: flex;
+    width: 90Px;
+    margin-right: 290px;
+}
+ .p1{
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 340;
+        font-size: 16px;
+        line-height: 20px;
+        color: #27273F;
+        display: flex;
+    }
+.p2{font-family: 'Nunito';
+    /* font-style: normal; */
+    font-weight: 345;
+    font-size: 16px;
+    line-height: 21px;
+    color: #27273F;
+    display: flex;
+    margin-top: 36px;}
+    .co{
+        width: 100px;
+    }
